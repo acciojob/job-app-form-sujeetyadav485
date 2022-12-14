@@ -8,54 +8,40 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-	<form action="JobApp Form">
+	<form method="post">
 	<h1>JobApp Form</h1>
-	<section>
-		<div class="Container  Container1">
-			<label for="Name" class="Name">Name</label>
-			<input type="text" class="name" id="name" placeholder="Name">
-		</div>
-	</section>
-	<section>
-		<div class="Container Container2" >
-			<label for="Email" class="email">Email</label>
-			<input type="Email" class="email" placeholder="Email">
-		</div>
-	</section>
-	<section>
-		<div class="Container Container3">
-			<label for="Gender" class="Gender">Gender</label>
-			<input type="radio" class="male">Male
-			<input type="radio" class="Female">Female
-		</div>
-	</section>
-	<section>
-		<div class="Container Container4">
-			<label for="Laptop Brand"> Laptop Brand</label>
-			<select name="option" id="option">
-				<option value="Apple" class="Apple">Apple</option>
-				<option value="Asus" class="asus">Asus</option>
-				<option value="hp" class="Hp">HP</option>
+	
+			<label for="name">Name</label>
+			<input type="text"required  id="name" placeholder="Name">
+		
+			<label for="email">Email</label>
+			<input type="email"required id="email" placeholder="Email">
+		
+			<label for="Gender"required>Gender</label>
+			<input type="radio" name="gender">Male
+			<input type="radio" name="gender">Female
+		
+			<label for="laptop">Laptop Brand</label>
+			<select name="option" id="laptop">
+				<option value="Apple" id="laptop">Apple</option>
+				<option value="Asus" id="laptop">Asus</option>
+				<option value="hp" id="laptop">HP</option>
 			</select>
-		</div>
-	</section>
-	<section>
-	<div class="Conatainer Conatainer5">
-		<label for="DOB" class="dob">DOB</label>
-		<input type="date"required class="dob" placeholder="Dob">
-	</div>
-	</section>
-	<section>
-		<div class="Conatainer Conatainer6">
-			<label for="Password" class="password" aria-placeholder="Password" >Password</label>
-			<input type="number"required min="10" class="password" id="password">
-		</div>
-	</section>
-	<section>
-		<div class="Container Conatainer7">
-			<button>Submit button</button>
-		</div>
-	</section>
+		
+			<label for="age" class="age" id="Age">Age</label>
+			<input type="number"required id="age">
+		
+		<label for="dob" >DOB</label>
+		<input type="date"required id="dob">
+	
+			<label for="password">Password</label>
+			<input type="number"required  id="password">
+
+			<label for="portfolio">portfolio</label>
+			<input type="url" id="portfolio">
+		
+			<button type="submit">Submit button</button>
+		
 	</form>
     <script type="text/javascript" src="./script.js">
 </script>
